@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Submitted Applications</title>
+</head>
+
+<body class="table_back">
+    <div class="container">
+        <h1 class="lg-heading">Submitted Applications</h1>
+    </div>
+    <table id="submittedApplicationsTable" border="1">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th>Education Level</th>
+            <th>Major Field</th>
+            <th>Relevant Skill</th>
+        </tr>
+    </table>
+    <script>
+        function displaySubmittedApplications() {
+            const submittedApplications = JSON.parse(localStorage.getItem('formData')) || [];
+
+            const table = document.getElementById('submittedApplicationsTable');
+            table.innerHTML = "<tr><th>Name</th><th>Email</th><th>Phone</th><th>Address</th><th>Education Level</th><th>Major Field</th><th>Relevant Skill</th></tr>";
+
+            submittedApplications.forEach(application => {
+                const row = table.insertRow();
+                const values = Object.values(application);
+                values.forEach(value => {
+                    const cell = row.insertCell();
+                    cell.textContent = value || '';
+                });
+            });
+        }
+        displaySubmittedApplications();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+
+}
+
+.con {
+  max-width: 100%;
+  height: 350px;
+  margin: 0 auto;
+  background-color: #b9b9af;
+}
+
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 20px;
+}
+h1.lg-heading {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.md-heading {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+
+form {
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%;
+}
+.personal-info,
+.resume-cover,
+.education,
+.experience,
+.skills,
+.avalability,
+.reference,
+.additional-info {
+  background: linear-gradient(to bottom, #b9b9af, #ecece7);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  opacity: 0.9;
+}
+
+.one-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+select {
+  width: 100%;
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-sizing: border-box;
+
+  background-color:#fdfdfbc1;
+}
+
+#jobResponsibilities {
+  width: 50%;
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: #fdfdfbc1;
+}
+
+#relocate {
+  width: 10%;
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-sizing: border-box;
+
+  background-color: #fdfdfbc1;
+}
+
+.in_put {
+  width: 100%;
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: #fdfdfbc1;
+}
+
+textarea #coverLetter {
+  width: 521px;
+  height: 438px;
+  resize: none;
+  margin-left: 10px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: #fdfdfbc1;
+}
+
+input {
+  color: 92bd93;
+}
+
+textarea {
+  width: 521px;
+  height: 100px;
+  resize: none;
+  margin-left: 10px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: #fdfdfbc1;
+}
+
+.error {
+  color: red;
+  font-size: smaller;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+#checkbox {
+  margin: 0;
+  padding-left: 10px;
+  font-size: medium;
+}
+#checkbox1{
+  margin: 0;
+  padding-left: 10px;
+  font-size: medium;
+}
+
+.terms {
+  font-size: medium;
+  padding-bottom: 10px;
+}
+
+.btnpos {
+  margin-left: 700px;
+}
+
+button {
+  background-color:#b9b9af;
+  margin-top: 20px;
+  color: fdfdfb;
+  padding: 10px 15px;
+  border: 1px solid #b9b9af;
+  border-radius: 3.5em;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background: #fdfdfb;
+  color:#b9b9af;
+  border: 1px solid #b9b9af;
+  cursor: pointer;
+}
+.side_by_side{
+  display: flex;
+}
+
+.table_back{
+  height: 100%;
+  margin: 0;
+  background: #ecece7;
+}
+#submittedApplicationsTable {
+  width: 80%;
+  border-collapse: collapse;
+  margin-top:60px;
+  margin-left: 150px;
+}
+
+#submittedApplicationsTable th, #submittedApplicationsTable td {
+  margin: 200px;
+  padding: 12px;
+  border: 1px solid #fdfdfb;
+  text-align: left;
+}
+
+#submittedApplicationsTable th {
+  background-color: #b9b9af;
+  color: #fdfdfb;
+}
+
+@media (max-width: 1000px) {
+  #submittedApplicationsTable {
+    width: 50%;
+    height: 70%;
+    margin-top:50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 12px;
+  }
+}
+

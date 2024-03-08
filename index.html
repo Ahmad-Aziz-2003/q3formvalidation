@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Job Application</title>
+</head>
+
+<body>
+    <div class="con">
+        <div class="container">
+            <div class="container2">
+                <h1 class="lg-heading">Job Application</h1>
+                <p id="description">Please fill out this form.</p>
+            </div>
+            <form id="form">
+                <div class="personal-info">
+                    <h1 class="md-heading">Personal Info:</h1>
+                    <div class="one-line">
+                        <div class="empty">
+                            <label for="firstName">First Name:</label>
+                            <input class="in_put" type="text" id="firstName" name="firstName">
+                            <div class="error"></div>
+                        </div>
+                        <div class="empty">
+                            <label for="lastName">Last Name:</label>
+                            <input class="in_put" type="text" id="lastName" name="lastName">
+                            <div class="error"></div>
+                        </div>
+                        <div class="empty">
+                            <label for="email">Email Address:</label>
+                            <input class="in_put" type="email" id="email" name="email" placeholder="@gmail.com">
+                            <div class="error"></div>
+                        </div>
+                    </div>
+                    <div class="one-line">
+
+                        <div class="empty">
+                            <label for="phone">Phone Number:</label>
+                            <input class="in_put" type="tel" id="phone" name="phone" placeholder="+92-xxxxxxxxxx">
+                            <div class="error"></div>
+                        </div>
+                        <div class="empty">
+                            <label for="phone">CNIC:</label>
+                            <input class="in_put" type="text" id="cnic" name="cnic">
+                            <div class="error"></div>
+                        </div>
+
+                        <div class="empty">
+                            <label for="gender">Gender:</label>
+                            <select id="gender" name="gender">
+                                <option value="" disabled selected>...</option>
+                                <option value="male">male</option>
+                                <option value="female">female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="one-line">
+                        <label for="street">Present Address:</label>
+                        <input class="in_put" type="text" id="address1" name="address1">
+                        <div class="error"></div>
+                    </div>
+                    <div class="one-line">
+                        <label for="street">Permanent Address:</label>
+                        <input class="in_put" type="text" id="address2" name="address2">
+                        <div class="error"></div>
+                    </div>
+                    <div class="one-line">
+                        <div class="empty">
+                            <label for="city">City:</label>
+                            <input class="in_put" type="text" id="city" name="city">
+                            <div class="error"></div>
+                        </div>
+                        <div class="empty">
+                            <label for="country">Country:</label>
+                            <select id="country" name="country">
+                                <option value="" disabled selected>Select your country</option>
+                                <option value="Pakistan">Pakistan</option>
+                                <option value="Iran">Iran</option>
+                                <option value="Saudi Arabia">Saudi Arabia</option>
+                                <option value="Iraq">Iraq</option>
+                                <option value="India">India</option>
+                                <option value="China">China</option>
+                                <option value="USA">USA</option>
+                                <option value="Afghanistan">Afghanistan</option>
+                            </select>
+                            <div class="error"></div>
+                        </div>
+                        <div class="empty">
+
+                            <label for="zipCode">ZIP Code:</label>
+                            <input class="in_put" type="text" id="zipCode" name="zipCode">
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-cover">
+                    <h1 class="md-heading">Resume And Cover Letter:</h1>
+                    <div class="one-line">
+
+                        <div class="empty">
+                            <label for="resume">Upload Resume:</label>
+                            <input class="in_put" type="file" id="resume" name="resume" accept=".pdf"
+                                placeholder="upload pdf-file">
+                            <div class="error"></div>
+                        </div>
+                    </div>
+
+                    <div class="one-line">
+                        <div class="empty">
+                            <label for="coverLetter">Cover Letter:</label>
+                            <textarea id="coverLetter" name="coverLetter" rows="8" cols="50"></textarea>
+                            <div class="error"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="education">
+                    <h1 class="md-heading">Education:</h1>
+                    <div class="one-line">
+                        <label for="schoolName">Name of School/University:</label>
+                        <input class="in_put" type="text" id="schoolName" name="schoolName">
+                        <div class="error"></div>
+                    </div>
+                    <div class="one-line">
+                        <div class="empty">
+                            <label for="educationLevel">Highest Level of Education Attained:</label>
+                            <select id="educationlevel" name="educationlevel">
+                                <option value="" disabled selected>level of education</option>
+                                <option value="Phd">Phd</option>
+                                <option value="MS">Ms</option>
+                                <option value="BS">Bs</option>
+                                <option value="Diploma">DIploma</option>
+                            </select>
+                            <div class="error"></div>
+                        </div>
+                        <div class="empty">
+                            <label for="major">Major/Area of Study:</label>
+                            <input class="in_put" type="text" id="major" name="major">
+                            <div class="error"></div>
+                        </div>
+                        <div class="empty">
+                            <label for="graduationYear">Graduation Year:</label>
+                            <input class="in_put" type="text" id="graduationYear" name="graduationYear">
+                        </div>
+                    </div>
+                    <div class="one-line">
+                        <label for="schoolName">
+                            <p style="color: blue;">If you have other degree, please fill</p>Name of School/University:
+                        </label>
+                        <input class="in_put" type="text" id="schoolName1" name="schoolName">
+
+                    </div>
+                    <div class="one-line">
+                        <div class="empty">
+                            <label for="educationLevel">Highest Level of Education Attained:</label>
+                            <select id="educationlevel1" name="educationlevel">
+                                <option value="" disabled selected>level of education</option>
+                                <option value="Phd">Phd</option>
+                                <option value="MS">Ms</option>
+                                <option value="BS">Bs</option>
+                                <option value="Diploma">DIploma</option>
+                            </select>
+                        </div>
+                        <div class="empty">
+                            <label for="major">Major/Area of Study:</label>
+                            <input class="in_put" type="text" id="major" name="major">
+                        </div>
+                        <div class="empty">
+                            <label for="graduationYear">Year:</label>
+                            <input class="in_put" type="text" id="graduationYear1" name="graduationYear">
+                        </div>
+                    </div>
+                </div>
+                <div class="experience">
+                    <h1 class="md-heading">Experience:</h1>
+                    <div class="one-line">
+                        <div class="empty">
+                            <label for="jobTitles">Previous Job Title:</label>
+                            <input class="in_put" type="text" id="jobTitles" name="jobTitles">
+                        </div>
+                        <div class="empty">
+                            <label for="companyNames">Company Names:</label>
+                            <input class="in_put" type="text" id="companyNames" name="companyNames">
+                        </div>
+                    </div>
+                    <div class="one-line">
+                        <div><label for="employmentDates1">Employment Dates:</label></div>
+
+                        <div class="empty">
+                            <label for="startdate">Start Date:</label>
+                            <input class="in_put" type="date" id="startdate" name="startdate">
+                        </div>
+                        <div class="empty">
+                            <label for="enddate">End Date:</label>
+                            <input class="in_put" type="date" id="enddate" name="enddate">
+                        </div>
+                    </div>
+                    <div class="one-line">
+                        <label for="jobResponsibilities">Job Responsibilities:</label>
+                        <input class="in_put" type="text" id="jobResponsibilities" name="jobResponsibilities">
+                    </div>
+                    <div class="one-line">
+                        <div class="empty">
+                            <label for="additional-data">Additional-info:</label>
+                            <textarea class="texttsize" id="additional-data" name="additional-data" rows="8"
+                                cols="50"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills">
+                    <h1 class="md-heading">Skills:</h1>
+                    <div class="one-line">
+                        <label for="relevantSkills">Relevant Skills:</label>
+                        <input class="in_put" type="text" id="relevantSkills" name="relevantSkills"
+                            placeholder="Enter your relevant skills">
+                        <div class="error"></div>
+                    </div>
+                    <div class="one-line">
+                        <label for="certifications">Certifications:</label>
+                        <input class="in_put" type="text" id="certifications" name="certifications"
+                            placeholder="Enter your certifications">
+                    </div>
+                    <div class="one-line">
+                        <label for="additionalSkills">Additional Skills:</label>
+                        <input class="in_put" type="text" id="additionalSkills" name="additionalSkills"
+                            placeholder="Enter any additional skills">
+                    </div>
+                    <div class="one-line">
+                        <label for="certifications">Certifications:</label>
+                        <input class="in_put" type="text" id="certifications1" name="certifications"
+                            placeholder="Enter your certifications">
+                    </div>
+                </div>
+                <div class="avalability">
+                    <h1 class="md-heading">Avalability:</h1>
+                    <div class="one-line">
+                        <div class="empty">
+                            <label for="startDate">Start Date:</label>
+                            <input class="in_put" type="date" id="startDate" name="startDate">
+                            <div class="error"></div>
+                        </div>
+                        <div class="empty">
+                            <label for="workSchedule">Preferred Work Schedule:</label>
+                            <input class="in_put" type="text" id="workSchedule" name="workSchedule">
+                        </div>
+                    </div>
+                    <div class="one-line">
+                        <label for="relocate">Willingness to Relocate:</label>
+                        <select id="relocate" name="relocate">
+                            <option value="" disabled selected>...</option>
+                            <option value="yes">yes</option>
+                            <option value="No">no</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="reference">
+                    <h1 class="md-heading">References:</h1>
+                    <div class="one-line">
+                        <div class="empty">
+                            <label for="referenceName">Reference Name:</label>
+                            <input class="in_put" type="text" id="referenceName" name="referenceName">
+                        </div>
+                        <div class="empty">
+                            <label for="referenceContact">Reference Contact Information:</label>
+                            <input class="in_put" type="text" id="referenceContact" name="referenceContact">
+                        </div>
+                        <div class="empty">
+                            <label for="relationship">Relationship to Applicant:</label>
+                            <input class="in_put" type="text" id="relationship" name="relationship">
+                        </div>
+                    </div>
+                </div>
+                <div class="additional-info">
+                    <h1 class="md-heading">Additional:</h1>
+
+                    <div class="one-line">
+                        <label for="jobSource">From where did you hear about this job?</label>
+                        <input class="in_put" type="text" id="jobSource" name="jobSource">
+                    </div>
+
+                    <div class="one-line">
+                        <label for="whyWorkHere">Why do you want to work for this company?</label>
+                        <textarea class="texttsize" id="whyWorkHere" name="whyWorkHere" rows="4" cols="50"></textarea>
+                    </div>
+                    <div class="">
+                        <br>
+                        <label for="relevent">Provide any additional information that you think is relevant to your
+                            application</label>
+                        <textarea id="relevent" name="relevent" rows="4" cols="50"></textarea>
+                        <p>Please read and agree to our terms and conditions:</p>
+                        <div class="terms">
+                            <input type="checkbox" name="checkbox" id="checkbox">
+                            I have agreed the <a href="">terms and conditions</a> of company
+                        </div>
+                        <div class="terms">
+                            <input type="checkbox" name="checkbox" id="checkbox1">
+                            I acknowledge the <a href="">Privacy Policy</a></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="side_by_side">
+                    <div class="">
+                        <button type="submit">submit application</button>
+                    </div>
+                    <div class="btnpos">
+                        <button id="viewApplicationsButton">View Submitted Applications</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
